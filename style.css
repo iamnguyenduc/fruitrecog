@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+#webcam-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #4CAF50;
+    padding: 2px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    width: 205px;
+    height: 205px;
+}
+
+#webcam-container canvas {
+    border-radius: 2px;
+}
+
+#label-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+#label-container div {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 5px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    width: 100%;
+}
+#label-container div:nth-child(odd) {
+    background-color: #E67701; /* Apple color */
+    color: white; /* Text color for better contrast */
+}
+
+#label-container div:nth-child(even) {
+    background-color: #D84C6F; /* Orange color */
+    color: white; /* Text color for better contrast */
+}
