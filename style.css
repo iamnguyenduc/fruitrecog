@@ -60,7 +60,7 @@ button:hover {
     align-items: center;
     padding: 10px;
     width: 100%;
-    max-width: 200px;
+    max-width: 300px;
     margin: 0 auto;
 }
 
@@ -76,12 +76,18 @@ button:hover {
     text-align: left;
     width: 100%;
 }
-#label-container div:nth-child(odd) {
+
+#label-container .apple {
     background-color: #E67701; /* Apple color */
-    color: white; /* Text color for better contrast */
+    color: white;
 }
 
-#label-container div:nth-child(even) {
+#label-container .orange {
     background-color: #D84C6F; /* Orange color */
-    color: white; /* Text color for better contrast */
+    color: white;
+}
+
+#label-container .unknown {
+    background-color: #007BFF; /* Unknown color */
+    color: white;
 }
